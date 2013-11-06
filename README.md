@@ -29,25 +29,25 @@ Cosas malas:
 
 El DTD es la primera línea que hemos colocado en los HTML. Sirve para indicarle al navegador qué versión de HTML estamos utilizando. Es muy importante ya que afecta, entre otras cosas, a cómo se verá la página en nuestro navegador.
 
-<code>
+```
 	&lt;!DTD html>
-</code>
+```
 
 ## Tag meta con la codificación UTF-8
 
 Los archivos article.html y main.html están codificados en UTF-8 pero además debemos indicarle al navegador que sí están en UTF-8. Lo hacemos con:
 
-<code>
+```
 	&lt;meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8">
-</code>
+```
 
 ## Hoja de estilos común
 
 Las plantillas html utilizan la misma hoja de estilos. La forma de incluirla es:
 
-<code>
+```
 	&lt;link rel="stylesheet" type="text/css" href="/css/style.css">
-</code>
+```
 
 ## Tags semánticos
 
@@ -55,14 +55,14 @@ Se utilizan algunos tags semánticos para organizar el contenido como <code>head
 
 Además, en el main.html utilizamos un <code>li</code> para mostrar el listado de los últimos artículos publicados. Para evitar mostrar los típicos bullets y márgenes, utilizamos el siguiente CSS:
 
-<code>
-	.listado-de-articulos {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		display: block;
-	}
-</code>
+```
+.listado-de-articulos {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+```
 
 ## Diseño mínimamente adaptativo
 
@@ -72,11 +72,10 @@ Si observamos con más detenimiento, podemos observar también que si el navegad
 
 Todo este comportamiento se consigue con muy poco CSS:
 
-<code>
-	.frame {
-		max-width: 1000px; /* Fija el ancho máximo en 1000px */
-		margin: auto;  /* Centra el contenedor (al aplicar margen automático, intenta igualar los márgenes laterales)*/
-	}
-</code>
-
+```
+.frame {
+	max-width: 1000px; /* Fija el ancho máximo en 1000px */
+	margin: auto;  /* Centra el contenedor (al aplicar margen automático, intenta igualar los márgenes laterales)*/
+}
+```
 
