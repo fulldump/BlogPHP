@@ -1,0 +1,85 @@
+
+/******************************************* Estilos de plantilla **************************************************/
+body {
+	font-family: sans-serif;
+	margin: 0;
+}
+
+.frame {
+	max-width: 1000px;
+	margin: auto;
+	box-shadow: 0 0 4px rgba(0,0,0,0.5);
+}
+
+.frame > header {
+	background-color: dodgerblue;
+	padding: 16px;
+}
+
+.frame > header .title {
+	color: black;
+	font-size: 300%;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.frame > header .subtitle {
+	color: silver;
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.frame > section {
+	padding: 16px;
+	overflow: hidden;
+	min-height: 400px;
+}
+
+.frame > section .tags {
+	float: right;
+	width: 300px;
+}
+
+.frame > section .cuerpo {
+	margin-right: 316px;
+}
+
+.frame > footer {
+	text-align: center;
+	font-size: 50%;
+	padding: 16px;
+	border-top: solid silver 1px;
+	margin: auto;
+	width: 50%;
+	min-width: 100px;
+}
+
+
+/****************************************** listado de artículos ******************************************************/
+.listado-de-articulos {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+}
+
+.listado-de-articulos article {
+	padding: 16px 0;
+}
+
+.listado-de-articulos article header {
+	font-size: 150%;
+}
+
+.listado-de-articulos article header a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+
+
+/****************************************************** articulo *************************************************************/
+.articulo header h1 {
+	font-size: 150%;
+}
