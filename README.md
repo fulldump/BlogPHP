@@ -30,7 +30,7 @@ Cosas malas:
 El DTD es la primera línea que hemos colocado en los HTML. Sirve para indicarle al navegador qué versión de HTML estamos utilizando. Es muy importante ya que afecta, entre otras cosas, a cómo se verá la página en nuestro navegador.
 
 ```
-	<!DTD html>
+<!DTD html>
 ```
 
 ## Tag meta con la codificación UTF-8
@@ -38,7 +38,7 @@ El DTD es la primera línea que hemos colocado en los HTML. Sirve para indicarle
 Los archivos article.html y main.html están codificados en UTF-8 pero además debemos indicarle al navegador que sí están en UTF-8. Lo hacemos con:
 
 ```
-	<meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" CONTENT="text/html; charset=UTF-8">
 ```
 
 ## Hoja de estilos común
@@ -46,7 +46,7 @@ Los archivos article.html y main.html están codificados en UTF-8 pero además d
 Las plantillas html utilizan la misma hoja de estilos. La forma de incluirla es:
 
 ```
-	<link rel="stylesheet" type="text/css" href="/css/style.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css">
 ```
 
 ## Tags semánticos
