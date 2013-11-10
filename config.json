@@ -1,0 +1,6 @@
+{
+    "database_host": "localhost",
+    "database_name": "blogdb",
+    "database_user": "blogdb",
+    "database_pass": "123456"
+}
