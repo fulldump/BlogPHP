@@ -17,6 +17,7 @@ class Database {
 	private static $n = 0;
 
 	public static function query($sql) {
+		self::connect();
 		self::$n++;
 		$result =  mysql_query($sql);
 		if (mysql_errno()) {
@@ -30,7 +31,7 @@ class Database {
 	}
 
 	public static function connect() {
-		if (null != self::$connection) {
+		if (null == self::$connection) {
 			self::$connection = mysql_connect(
 				Config::get('database_host'),
 				Config::get('database_user'),
