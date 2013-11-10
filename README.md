@@ -28,6 +28,7 @@ Cosas buenas:
 * El diseño es muy simple
 * Todas las consultas a base de datos pasan a través de un único punto (la clase Database) 
 * Usa UTF-8 para la codificación de las conexiones con la base de datos
+* Las tablas y campos de la base de datos están definidas para que usen UTF-8
 
 Cosas malas:
 
