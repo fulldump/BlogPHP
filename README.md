@@ -11,15 +11,16 @@ Para ello utilizaremos la base de datos relacional MySQL con la siguiente estruc
 
 * Article
 	* id - autonumérico
-	* title - varchar(32)
+	* title - varchar(64)
 	* text - text
-	* time_creation - timestamp
-	* time_publication - timestamp
+	* time_creation - int
+	* time_publication - int
 
 * Comment
 	* id - autonumérico
-	* id_blog - relacionado con la tabla blog
+	* id_article - relacionado con la tabla blog
 	* text - text
+	* time - int
 
 Cosas buenas:
 
