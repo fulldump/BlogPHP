@@ -26,6 +26,7 @@ Cosas buenas:
 * Permite almacenar y servir una gran cantidad de artículos
 * El diseño es muy simple
 * Todas las consultas a base de datos pasan a través de un único punto (la clase Database) 
+* Usa UTF-8 para la codificación de las conexiones con la base de datos
 
 Cosas malas:
 
@@ -36,3 +37,13 @@ Cosas malas:
 * No tiene interfaz de edición
 * No tiene tags
 * No utiliza una capa (tipo ORM) para acceder a la base de datos
+
+
+## ¿Cómo se usa UTF-8 para la codificación de las conexiones con la base de datos?
+
+La clase Database.class.php tiene un método estático privado en el que se establece la conexión con la base de datos. Justo después de establecer la conexión, le decimos que vamos a usar UTF-8:
+
+```
+mysql_query("SET NAMES 'utf8'");
+```
+
