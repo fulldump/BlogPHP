@@ -27,7 +27,11 @@ require_once('class/Database.class.php');
 						?>
 						<li>
 							<article>
-								<header><a href="article.html"><?=$article['title']?></a></header>
+								<header>
+									<a href="article.php?id_article=<?=$article['id']?>">
+										<?=$article['title']?>
+									</a>
+								</header>
 								<p><?=$article['text']?></p>
 							</article>
 						</li>
